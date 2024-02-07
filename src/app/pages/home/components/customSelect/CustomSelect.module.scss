@@ -1,0 +1,72 @@
+.customSelect {
+  display: block;
+  width: 180px;
+  padding: 8px 15px;
+  border: 1px solid var(--grey);
+  border-radius: 15px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  cursor: pointer;
+  transition: box-shadow 0.2s;
+  font-size: 18px;
+  text-transform: uppercase;
+  z-index: 10;
+
+  &:hover {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.45);
+  }
+  
+}
+.wrapper {
+  position: relative;
+}
+
+.dropDownMenu {
+  position: absolute;
+  top: 49px;
+  display: block;
+  width: 180px;
+  max-height: 0px;
+  border-radius: 5px;
+  overflow: scroll;
+  transition: max-height 0.2s;
+  z-index: 10;
+}
+
+.activeMenu {
+  max-height: 180px;
+  border: 1px solid var(--grey);
+}
+
+.dropDownItem {
+  size: 18px;
+  text-transform: uppercase;
+  padding: 10px 15px;
+  background-color: white;
+  z-index: 10;
+  border: 1px solid var(--grey);
+  cursor: pointer;
+
+  &:hover {
+    font-weight: bold;
+  }
+}
+
+.activeDropDownItem {
+  background-color: var(--grey);
+}
+
+.arrowIcon {
+  width: 10px;
+  height: 10px;
+  color: black;
+  fill: black;
+  transform: rotate(180deg);
+  transition: transform 0.2s;
+}
+.active {
+  transform: rotate(0deg);
+}

@@ -1,0 +1,32 @@
+.infoBlock {
+  // flex-grow: 1;
+  background-color: black;
+  position: fixed;
+  top: calc(55%);
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.infoText {
+  color: white;
+  font-size: 96px;
+  line-height: 96px;
+  text-align: center;
+}
+
+@media (width <= 500px) {
+  .infoBlock {
+    top: calc(50%);
+  }
+
+  .infoText {
+    color: white;
+    font-size: 80px;
+    text-align: center;
+  }
+}

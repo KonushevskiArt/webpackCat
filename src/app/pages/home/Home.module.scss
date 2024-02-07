@@ -1,0 +1,22 @@
+.home {
+  min-height: 100vh;
+  height: 100%;
+  background: no-repeat url('./kitten.png');
+  background-position: top right;
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+}
+
+.topPageWrapper {
+  height: 55vh;
+  min-height: 150px;
+  padding-left: 30px;
+  padding-right: 10px;
+}
+
+@media (width <= 500px) {
+  .home {
+    background: none;
+  }
+}
