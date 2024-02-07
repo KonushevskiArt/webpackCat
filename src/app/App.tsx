@@ -1,10 +1,12 @@
 import React from 'react';
-import { TestComponent } from './components/first/TestComponent';
+import Home from './pages/home/Home';
+import store from './store';
+import { Provider } from 'react-redux';
 
 export const App = () => {
   return (
-    <div>
-      <TestComponent />
-    </div>
+    <Provider store={store}>
+      <Home />
+    </Provider>
   );
 };
